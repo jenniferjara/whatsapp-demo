@@ -11,13 +11,13 @@ function enviar(e){
 		var cajaDos = document.createElement("div");
 		var parrafo = document.createElement("p");
 		var hora = document.createElement("div");
-		var hm = new Date().toLocaleTimeString(navigator.language, {hour: "2-digit", minute:"2-digit"});
+		var horaMinuto = new Date().toLocaleTimeString(navigator.language, {hour: "2-digit", minute:"2-digit"});
 		cajaUno.classList.add("w-message", "w-message-out");
 		cajaDos.classList.add("w-message-text");
 		hora.classList.add("time");
 
 		parrafo.innerText = this.value;
-		hora.innerText = hm;
+		hora.innerText = horaMinuto;
 		
 		cajaDos.appendChild(parrafo);
 		cajaDos.appendChild(hora);
